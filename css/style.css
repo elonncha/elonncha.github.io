@@ -827,6 +827,7 @@ a:hover {
 
 .w-title {
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /*======================================
@@ -882,8 +883,8 @@ a:hover {
 .card-blog .card-category-box {
   position: absolute;
   text-align: center;
-  top: -16px;
-  left: 15px;
+  top: -10px;
+  left: 5px;
   right: 15px;
   line-height: 25px;
   overflow: hidden;

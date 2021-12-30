@@ -503,6 +503,7 @@ a:hover {
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
   color: #003057;
+  text-align: left;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
@@ -743,7 +744,7 @@ a:hover {
 
 .service-box .s-description {
   color: #4e4e4e;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /*======================================

@@ -143,7 +143,9 @@ a:hover {
 
 /*--/ Title A /--*/
 
-.title-box {
+.
+
+{
   margin-bottom: 4rem;
 }
 
@@ -1293,4 +1295,5 @@ footer .credits a {
 
 .textbold {
   font-weight: bold;
+  color:#003057;
 }

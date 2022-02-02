@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Yilun's Research</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/b8bdaadb85.js" crossorigin="anonymous"></script>
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <div class="more-info">
+        <ul class="list-ico">
+          <li class="nav-item" style="margin:0px">
+            <a class="nav-link js-scroll">Yilun Zha</a>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="index.html#home">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div class="intro intro-single route bg-image" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-14">
+          <div class="post-box">
+            
+            <div class="post-meta">
+              <h1 class="article-title" style="font-size: 2.75rem;">Spatio-Temporal Modelling of Mobility Patterns and Exposure to COVID-19 in New York City</h1>
+              <ul>
+                <li>
+                  <span class="ion-person"></span>
+                  <a>Yilun Zha, Harshavardhan Kamarthi, Gautham Gururajan</a>
+                </li>
+                <li>
+                  <span class="ion-pricetag"></span>
+                  <a>Deep Learning, Mobility, COVID-19</a>
+                </li>
+                <li>
+                  <i class="fas fa-file-pdf"></i>
+                  <a href="https://drive.google.com/file/d/1sXP0E2k4gBxtuTqHCYGV2nmDz6hzHBG4/view?usp=sharing">download</a>
+                </li>
+              </ul>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  We propose to tackle this problem by combining SafeGraph dataset for mobility and exposure as well as the New York City Health department’s report of weekly cases at the level of zip code to model zip code level COVID-19 infection spread. 
+                  Finally, we aim to identify local hotspots for infections by directly accounting exposure of populations to POIs in our network-based metapopulation population.
+                </p>
+              </blockquote>
+
+              <div class="post-thumb">
+                <br>
+                <img src="img/research2_b.jpg" class="img-fluid" alt="" width="48%">
+                <img src="img/research2_c.jpg" class="img-fluid" alt="" width="48%">
+                <p class="text-center" style="color:black">COVID-19 positive rate(left) and case rate(right) in NYC during the study time</p>
+              </div><br>
+
+              <div class="article-content" style="font-size: 1.2rem;">
+                <p style="text-align:justify">
+                  Most compartmental and meta-population models encounter difficulty in modelling the mechanism and magnitude of the spread
+                  of a disease at a localized level due to the oversimplification over
+                  the multiplicity of mechanical dynamics. As a result, this study will <strong style="color:#003057;"> interlace the dynamics of disease
+                    spread for each region (Zip Code Tabulation Area, ZCTA) with
+                    localized indicator of exposure: visits to places of interest (POI).</strong>
+                  This allows us to capture the significance of mobility and exposure
+                  of individuals of a population at specific important locations as
+                  well as identify local hotspot locations which result in increased
+                  contacts and then infections.
+                </p>  
+
+                <div class="post-thumb">
+                  <br>
+                  <img src="img/research2_d.jpg" class="img-fluid" alt="" width="100%">
+                  
+                </div><br>
+
+                <p style="text-align:justify">
+                  We describe our neural model <strong style="color:#003057;">ZPMNet (Zip Code -POI
+                    Mobility Network)</strong>. The main idea behind our architecture is to
+                    learn a good representation of dynamics for each of the POIs and
+                    ZCTs and leverage these representations along with visit counts to
+                    forecast future case rate as function of aggregated effect of mobility
+                    on each ZCT from each POI. Out model is divided into a) ZIP
+                    Encoder to encode features of ZCT and past case rate dynamics.
+                    b) POI Encoder that encodes a representation for POI based on its
+                    features such as area, total visits, POI type c) Weight Encoder that
+                    learn the influence of each POI on ZCT for given time-step based
+                    on the embedding d) Decoder: Uses the encoders as well as weights
+                    to get case rate predictions for each ZCT. 
+                </p>
+
+                <div class="post-thumb">
+                  <br>
+                  <img src="img/research2_e.jpg" class="img-fluid" alt="" width="100%">
+                  
+                </div><br>
+  
+                <div class="post-thumb">
+                  <br>
+                  <img src="img/research2_f.jpg" class="img-fluid" alt="" width="100%">
+                  
+                </div><br>
+                
+                <p style="text-align:justify">
+                  We report the accuracy of all models and baselines in Table 1. We
+                    observe that ZPMNet is the significantly better than all baselines.
+                    In particular we observe 52%-220% average improvements. As we
+                    forecast farther into the future (as 𝜏 increases) the performance of
+                    baselines quickly degrade faster than our model’s. We also observed
+                    that for over 63% of all ZCTs over model performs over 200% time
+                    better with predictions of other models failing to capture the general
+                    trends of ZCT case rates. Examples of ZPMNet predictions are
+                    shown.
+                    Since FFN is a modification ZPMNet without the GRU module, we observes that it also outperforms other baselines except
+                    ZPMNet. Thus, leveraging mobility relations via our approach
+                    still provides good performance even if we don’t utilize the entire
+                    history of case rates.
+                </p><br><br>
+
+                <p style="text-align:justify">
+                  Data Source: <a href="https://www.safegraph.com/">SafeGraph</a>; <a href="https://www1.nyc.gov/site/doh/index.page?">NYC Health</a> 
+                </p>
+              </div>             
+            </div>
+
+           
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  
+  <!--/ Section Footer /-->
+  <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-color:#003057;">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p> Make Healthier Cities Together! </p>
+            <p> yilunzha@gatech.edu </p>
+          </div>
+        </div>
+        <div class="socials">
+          <ul class="socials">
+            <li>
+              <a href="https://www.linkedin.com/in/yilun-elon-zha-454818180/" title="Linkedin"><i class="fab fa-linkedin fa-3x" style="color: #ffffff;"></i></a>
+            </li> &nbsp;
+            <li>
+              <a href="https://www.instagram.com/elonn_cha/?hl=en" title="Instagrams"><i class="fab fa-instagram fa-3x" style="color: #ffffff;"></i></a>
+            </li> &nbsp;
+            <li>
+              <a href="https://scholar.google.com/citations?user=W9x7YioAAAAJ&hl=en" title="Google Scholar"><i class="fas fa-graduation-cap fa-3x" style="color: #ffffff;"></i></a>
+            </li> &nbsp;
+            <li>
+              <a href="https://github.com/elonncha" title="Github"><i class="fab fa-github fa-3x" style="color: #ffffff;"></i></a>
+            </li> &nbsp;
+          </ul>
+        </div>
+      </div>
+      
+      <p>&copy; 2021 Yilun Zha. All rights reserved.</p>
+    </footer>
+  </section>
+  <!--/ Section Footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

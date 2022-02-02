@@ -648,7 +648,7 @@ a:hover {
 }
 
 .intro-single {
-  height: 350px;
+  height: 100px;
 }
 
 .intro-single .intro-content {
@@ -1296,4 +1296,27 @@ footer .credits a {
 .textbold {
   font-weight: bold;
   color:#003057;
+}
+
+
+
+
+
+
+
+.btn {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  background: #3498db;
+  padding: 3px 5px 3px 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #003057;
+  text-decoration: none;
 }

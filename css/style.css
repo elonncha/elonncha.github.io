@@ -105,7 +105,7 @@ a:hover {
 
 .paralax-mf {
   position: relative;
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
 
 .display-table {
@@ -218,11 +218,11 @@ a:hover {
 }
 
 .socials .ico-circle {
-  height: 40px;
-  width: 40px;
+  height: 52px;
+  width: 52px;
   font-size: 1.7rem;
   border-radius: 50%;
-  line-height: 1.4;
+  line-height: 0;
   margin: 0 15px 0 0;
   background-color: white;
   box-shadow: 0 0 0 3px #003057;
@@ -943,7 +943,7 @@ a:hover {
 }
 
 .blog-wrapper .article-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .blog-wrapper .post-meta {
@@ -1070,7 +1070,7 @@ a:hover {
 ======================================*/
 
 .footer-paralax {
-  padding: 4rem 0 0 0;
+  padding: 2rem 0 0 0;
 }
 
 .contact-mf {
@@ -1084,7 +1084,7 @@ a:hover {
 footer {
   text-align: center;
   color: #fff;
-  padding-bottom: 4rem;
+  padding-bottom: 0.5rem;
 }
 
 footer .copyright {
@@ -1299,24 +1299,3 @@ footer .credits a {
 }
 
 
-
-
-
-
-
-.btn {
-  -webkit-border-radius: 9;
-  -moz-border-radius: 9;
-  border-radius: 5px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 12px;
-  background: #3498db;
-  padding: 3px 5px 3px 5px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #003057;
-  text-decoration: none;
-}
